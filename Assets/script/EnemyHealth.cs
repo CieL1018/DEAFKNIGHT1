@@ -5,27 +5,24 @@ using UnityEngine.UI;
 
 public class EnemyHealth : MonoBehaviour
 {
-    public float fullHealth;
-    float currentHealth;
+    public int fullHealth = 100;
+    public int latestHealth;
 
-
-    public Slider playerHealthSlider;
+    public HealthBar Bar;
     void Start()
     {
-        currentHealth = fullHealth;
-    }
-    void Update()
-    {
-
+        latestHealth = fullHealth;
+        Bar.SetMaxHealth(fullHealth);  
     }
 
-    public void addDamage(float damage)
+    public void addDamage(int damage)
     {
-        currentHealth -= damage;
-        if (currentHealth <= 0)
+        latestHealth -= damage;
+        if(latestHealth <= 0)
         {
             makeDead();
         }
+        Bar.setHealth(latestHealth);
     }
 
     public void makeDead()

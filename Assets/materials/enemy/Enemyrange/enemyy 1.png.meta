@@ -129,6 +129,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -976,6 +977,42 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      enemyy 1_33: -2214709912689262505
+      enemyy 1_23: 3171360243392068503
+      enemyy 1_16: -8503347317204113619
+      enemyy 1_25: 3937146244690787914
+      enemyy 1_24: -119901789560962987
+      enemyy 1_1: 6036882719412543541
+      enemyy 1_14: 2495594569594153233
+      enemyy 1_9: 209407440899350957
+      enemyy 1_20: -3706627137816574369
+      enemyy 1_19: -4942375846472699583
+      enemyy 1_32: 7318741903639504945
+      enemyy 1_11: -7166422232252129581
+      enemyy 1_17: -8675245449126829050
+      enemyy 1_28: -81480415489358176
+      enemyy 1_7: 455475828276238697
+      enemyy 1_27: -1340677289132760503
+      enemyy 1_31: 3873995618372331149
+      enemyy 1_21: 2684092785177433783
+      enemyy 1_6: 5409988414877417481
+      enemyy 1_26: -1273334508752887942
+      enemyy 1_10: 1319110753533359447
+      enemyy 1_22: 7508392097131644605
+      enemyy 1_30: -1895651882431525865
+      enemyy 1_5: -8191328256124721417
+      enemyy 1_34: -3724864353041234402
+      enemyy 1_18: 1059886725009698127
+      enemyy 1_3: 204695224433036106
+      enemyy 1_4: -3263728887816880454
+      enemyy 1_8: 8012528362181197828
+      enemyy 1_0: 4333352602917306404
+      enemyy 1_12: 2624149071161033561
+      enemyy 1_15: -913579475239301516
+      enemyy 1_2: 4604000636368585992
+      enemyy 1_29: 4412126350520527392
+      enemyy 1_13: 2856387792753947557
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

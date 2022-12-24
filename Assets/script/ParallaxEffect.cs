@@ -5,7 +5,9 @@ using UnityEngine;
 public class ParallaxEffect : MonoBehaviour
 {
     float lenght, startX, startY;
-    public GameObject player;
+    public GameObject player2;
+    //public GameObject player;
+    
 
     public float parallaxX;
 
@@ -19,9 +21,9 @@ public class ParallaxEffect : MonoBehaviour
 
     void Update()
     {
-        float temp = (player.transform.position.x * (1 - parallaxX));
-        float distX = (player.transform.position.x * parallaxX);
-        float distY = (player.transform.position.y * parallaxX);
+        float temp = (player2.transform.position.x * (1 - parallaxX));
+        float distX = (player2.transform.position.x * parallaxX);
+        float distY = (player2.transform.position.y * parallaxX);
         transform.position = new Vector3(startX + distX, startY + distY, transform.position.z);
 
         if (temp > startX + lenght) startX += lenght;

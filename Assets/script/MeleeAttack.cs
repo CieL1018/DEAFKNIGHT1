@@ -11,8 +11,8 @@ public class MeleeAttack : MonoBehaviour
     private float cooldownTimer = Mathf.Infinity;
 
     private Animator myanim;
-    //private EnemyHealth enemyHealth;
-    private EnemyBehaviour enemyBehaviour;
+    private EnemyHealth enemyHealth;
+    //private EnemyBehaviour enemyBehaviour;
 
     private void Awake()
     {
@@ -40,7 +40,7 @@ public class MeleeAttack : MonoBehaviour
             0, Vector2.left, 0, playerLayer);
 
         if (hit.collider != null)
-            enemyBehaviour = hit.transform.GetComponent<EnemyBehaviour>();
+            enemyHealth = hit.transform.GetComponent<EnemyHealth>();
 
         return hit.collider != null;
     }
@@ -55,7 +55,7 @@ public class MeleeAttack : MonoBehaviour
     {
         if (EnemyInSight())
         {
-            enemyBehaviour.TakeHit(damage);
+            enemyHealth.addDamage(damage);
         }
     }
 }
