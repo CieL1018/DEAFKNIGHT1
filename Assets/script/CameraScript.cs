@@ -13,7 +13,8 @@ public class CameraScript : MonoBehaviour
     void Start()
     {
         //player = GameObject.Find("Knight");
-        //player = GameObject.Find("Player");
+        //player = GameObject.Find("Cube");
+        player = GameObject.Find("Player");
         player = GameObject.Find("PlayerKnight");
     }
 

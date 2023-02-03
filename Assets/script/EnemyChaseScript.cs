@@ -8,14 +8,21 @@ public class EnemyChaseScript : MonoBehaviour
     public float moveSpeed;
     public int patrolDestination;
 
-
-
+    private Rigidbody2D myRB;
+    private Animator myanim;
     public Transform playerTransform;
     public bool isChasing;
     public float chaseDistance;
 
+    private void Awake()
+    {
+        myanim = GetComponent<Animator>();
+    }
+
+
     void Update()
     {
+        
         if (isChasing)
         {
             if (transform.position.x > playerTransform.position.x)
@@ -55,5 +62,10 @@ public class EnemyChaseScript : MonoBehaviour
                 }
             }
         }
+    }
+
+    public void AddKnockbackForce(Vector2 force)
+    {
+        myRB.AddForce(force, ForceMode2D.Impulse);
     }
 }

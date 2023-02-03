@@ -14,6 +14,18 @@ public class EnemyMelee : MonoBehaviour
 
     private PlayerHealth playerHealth;
 
+    private Player Player;
+
+    // void OnTriggerEnter2D(BoxCollider2D col){
+    //     if(col.CompareTag("Player")){
+            
+    //         StartCoroutine(Player.Knockback(0.02f, 350, Player.transform.position));
+    //     }
+
+    // }
+
+
+
     private void Awake()
     {
         myanim = GetComponent<Animator>();
@@ -21,6 +33,7 @@ public class EnemyMelee : MonoBehaviour
 
     void Update()
     {
+        myanim.SetBool("moving", true);
         if (PlayerInSight())
         {
             cooldownTimer += Time.deltaTime;

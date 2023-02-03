@@ -11,8 +11,8 @@ public class PlayerHealth : MonoBehaviour
     public HealthBar healthBar;
 
     public Rigidbody2D rb;
-    public float knockBackForce = 10;
-    public float knockBackForceUp = 2;
+    //public float knockBackForce = 10;
+    //public float knockBackForceUp = 2;
 
 
     void Start()
