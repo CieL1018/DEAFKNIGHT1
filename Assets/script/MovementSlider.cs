@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class MovementSlider : MonoBehaviour
 {
+    private Rigidbody2D rb;
     [SerializeField] private GameObject Player;
     [SerializeField] private Slider slider;
     [SerializeField] private float movementSpeed;
@@ -14,6 +15,7 @@ public class MovementSlider : MonoBehaviour
     void Start()
     {
         myAnim = GetComponent<Animator>();
+        rb = GetComponent<Rigidbody2D>();
     }
     // Update is called once per frame
     void Update()
