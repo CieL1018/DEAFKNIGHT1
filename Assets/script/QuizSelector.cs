@@ -7,17 +7,20 @@ public class QuizSelector : MonoBehaviour
 {
     public GameObject currentScreen;
     public GameObject correctScreen, wrongScreen;
+    public GameObject abilityScreen;
 
     public void wrongAnswer()
     {
         currentScreen.SetActive(false);
         wrongScreen.SetActive(true);
+        // abilityScreen.SetActive(false);
     }
 
     public void correctAnswer()
     {
         currentScreen.SetActive(false);
         correctScreen.SetActive(true);
+        // abilityScreen.SetActive(false);
     }
     public void resumeGame() 
     {
@@ -26,6 +29,7 @@ public class QuizSelector : MonoBehaviour
         wrongScreen.SetActive(false);
         Time.timeScale = 1f;
         SceneManager.LoadScene(1);
+        
         // isPaused = false;
     }
 
